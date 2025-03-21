@@ -1,25 +1,23 @@
 version: '3.8'
 
 services:
-  nextjs:
+  vite-app:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: nextjs-app
+    container_name: nutaro-website
     ports:
-      - "9876:3000"
+      - "8080:3000"
     restart: unless-stopped
     environment:
       - NODE_ENV=production
-      # Add any other environment variables your app needs here
-      # - DATABASE_URL=your_database_url
-      # - API_KEY=your_api_key
     volumes:
-      # Optional: For development, you can mount your code to enable hot reloading
+      # For development, uncomment to enable hot reloading
       # - ./:/app
+      # - /app/node_modules
       # For persistent data if needed
-      - nextjs_data:/app/data
+      - vite_app_data:/app/data
 
 volumes:
-  nextjs_data:
+  vite_app_data:
     # This creates a named volume for persistent data
