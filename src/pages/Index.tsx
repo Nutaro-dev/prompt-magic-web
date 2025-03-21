@@ -1,5 +1,5 @@
 
-import { ArrowRight, Code, Compass, Layout, MessageSquare, Rocket, Users } from "lucide-react";
+import { ArrowRight, Code, Compass, Layout, MessageSquare, Rocket, Database, Server } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import ServiceCard from "@/components/ServiceCard";
@@ -16,9 +16,9 @@ const services = [
     description: "Individuelle Webanwendungen, die Ihre Geschäftsprozesse optimieren und digitalisieren."
   },
   {
-    icon: Compass,
-    title: "Digitale Strategie",
-    description: "Ganzheitliche Beratung für Ihren erfolgreichen Auftritt im digitalen Raum."
+    icon: Database,
+    title: "Backend-Lösungen",
+    description: "Skalierbare Server- und Datenbanklösungen mit Firebase, Supabase, MongoDB oder PostgreSQL."
   }
 ];
 
@@ -107,8 +107,8 @@ const Index = () => {
                     <Layout className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-medium mb-1">2. Konzeption & Design</h3>
-                    <p className="text-muted-foreground text-sm">Wir gestalten das Fundament für Ihr Projekt mit durchdachtem Design.</p>
+                    <h3 className="font-medium mb-1">2. Konzeption & Entwicklungsplanung</h3>
+                    <p className="text-muted-foreground text-sm">Wir planen die technische Struktur und die notwendigen Entwicklungsschritte.</p>
                   </div>
                 </div>
                 
@@ -127,8 +127,8 @@ const Index = () => {
                     <Rocket className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-medium mb-1">4. Launch & Betreuung</h3>
-                    <p className="text-muted-foreground text-sm">Wir begleiten Sie beim Start und bieten fortlaufende Unterstützung.</p>
+                    <h3 className="font-medium mb-1">4. Launch & Einrichtung</h3>
+                    <p className="text-muted-foreground text-sm">Wir begleiten Sie beim Start und der initialen Einrichtung Ihres Projekts.</p>
                   </div>
                 </div>
               </div>
@@ -144,11 +144,11 @@ const Index = () => {
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="bg-primary/10 p-2 h-fit rounded-lg">
-                    <Users className="h-5 w-5 text-primary" />
+                    <Server className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-medium">Persönliche Betreuung</h4>
-                    <p className="text-muted-foreground text-sm">Als kleines Team garantieren wir direkte Kommunikation mit den Entwicklern.</p>
+                    <h4 className="font-medium">Technische Expertise</h4>
+                    <p className="text-muted-foreground text-sm">Als Informatik-Studenten bringen wir aktuelles Fachwissen und innovative Ansätze mit.</p>
                   </div>
                 </div>
                 
@@ -157,8 +157,8 @@ const Index = () => {
                     <Code className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-medium">Technische Exzellenz</h4>
-                    <p className="text-muted-foreground text-sm">Wir setzen auf moderne Technologien und Best Practices.</p>
+                    <h4 className="font-medium">Moderne Technologien</h4>
+                    <p className="text-muted-foreground text-sm">Wir setzen auf React, Next.js und andere moderne Frameworks für zukunftssichere Lösungen.</p>
                   </div>
                 </div>
                 
