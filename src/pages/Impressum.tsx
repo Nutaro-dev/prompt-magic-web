@@ -8,40 +8,20 @@ const Impressum = () => {
         <div className="space-y-8">
           <section>
             <h2 className="text-2xl font-bold mb-4">Angaben gemäß § 5 TMG</h2>
-            <p className="mb-2">HamburgDevs GmbH</p>
-            <p className="mb-2">Musterstraße 123</p>
-            <p>20457 Hamburg</p>
+            <p className="mb-2">Andre Stierl</p>
+            <p className="mb-2">Beyerstieg 14</p>
+            <p>21107 Hamburg</p>
           </section>
           
           <section>
             <h2 className="text-2xl font-bold mb-4">Kontakt</h2>
-            <p className="mb-2">Telefon: +49 (0) 40 123 456 789</p>
-            <p className="mb-2">E-Mail: info@hamburgdevs.de</p>
+            <p className="mb-2">E-Mail: info@nutaro.de</p>
+            <p className="mb-2">Telefon: auf Anfrage</p>
           </section>
           
           <section>
-            <h2 className="text-2xl font-bold mb-4">Vertretungsberechtigte Geschäftsführer</h2>
-            <p>Max Mustermann, Laura Schmidt</p>
-          </section>
-          
-          <section>
-            <h2 className="text-2xl font-bold mb-4">Registereintrag</h2>
-            <p className="mb-2">Eintragung im Handelsregister.</p>
-            <p className="mb-2">Registergericht: Amtsgericht Hamburg</p>
-            <p>Registernummer: HRB 123456</p>
-          </section>
-          
-          <section>
-            <h2 className="text-2xl font-bold mb-4">Umsatzsteuer-ID</h2>
-            <p className="mb-2">Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:</p>
-            <p>DE 123456789</p>
-          </section>
-          
-          <section>
-            <h2 className="text-2xl font-bold mb-4">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-            <p className="mb-2">Max Mustermann</p>
-            <p className="mb-2">Musterstraße 123</p>
-            <p>20457 Hamburg</p>
+            <h2 className="text-2xl font-bold mb-4">Inhaltlich verantwortlich</h2>
+            <p>Andre Stierl</p>
           </section>
           
           <section>

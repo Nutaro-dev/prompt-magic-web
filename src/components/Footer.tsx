@@ -9,19 +9,21 @@ const Footer = () => {
       <div className="container mx-auto py-12 px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-semibold mb-4">HamburgDevs</h3>
+            <h3 className="text-lg font-semibold mb-4">Nutaro</h3>
             <p className="text-muted-foreground mb-4">
-              Wir gestalten digitale Erlebnisse, die begeistern und Unternehmen erfolgreicher machen.
+              Wir gestalten digitale Lösungen, die Unternehmen beim Einstieg in die digitale Welt unterstützen.
             </p>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold mb-4">Kontakt</h3>
             <address className="not-italic text-muted-foreground">
-              <p>Musterstraße 123</p>
-              <p>20457 Hamburg</p>
-              <p className="mt-2">Email: <a href="mailto:info@hamburgdevs.de" className="hover:text-primary">info@hamburgdevs.de</a></p>
-              <p>Telefon: <a href="tel:+4940123456789" className="hover:text-primary">+49 (0) 40 123 456 789</a></p>
+              <p>Beyerstieg 14</p>
+              <p>21107 Hamburg</p>
+              <div className="mt-2">
+                <p>Allgemein: <a href="mailto:info@nutaro.de" className="hover:text-primary">info@nutaro.de</a></p>
+                <p>Anfragen: <a href="mailto:booking@nutaro.de" className="hover:text-primary">booking@nutaro.de</a></p>
+              </div>
             </address>
           </div>
           
@@ -37,7 +39,7 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 mt-8 border-t border-border text-center text-muted-foreground text-sm">
-          <p>© {currentYear} HamburgDevs. Alle Rechte vorbehalten.</p>
+          <p>© {currentYear} Nutaro. Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>

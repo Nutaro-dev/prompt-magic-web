@@ -75,11 +75,11 @@ const PrivacyPolicy = () => {
             <p className="mb-4">
               Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
             </p>
-            <p className="mb-2">HamburgDevs GmbH</p>
-            <p className="mb-2">Musterstraße 123</p>
-            <p className="mb-2">20457 Hamburg</p>
-            <p className="mb-2">Telefon: +49 (0) 40 123 456 789</p>
-            <p className="mb-4">E-Mail: info@hamburgdevs.de</p>
+            <p className="mb-2">Andre Stierl</p>
+            <p className="mb-2">Beyerstieg 14</p>
+            <p className="mb-2">21107 Hamburg</p>
+            <p className="mb-2">E-Mail: info@nutaro.de</p>
+            <p className="mb-4">Telefon: auf Anfrage</p>
             <p className="mb-4">
               Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit 
               anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, 
