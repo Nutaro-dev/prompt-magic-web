@@ -36,10 +36,12 @@ ENV NODE_ENV production
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
-# Copy the necessary files from the builder stage
+# Copy necessary files from the builder stage
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next/standalone ./
-COPY --from=builder /app/.next/static ./.next/static
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/next.config.js ./next.config.js
 
 # Set the correct permissions
 RUN chown -R nextjs:nodejs /app
@@ -51,4 +53,4 @@ USER nextjs
 EXPOSE 3000
 
 # Define the command to run the app
-CMD ["node", "server.js"]
+CMD ["npm", "start"]
