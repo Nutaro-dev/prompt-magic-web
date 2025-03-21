@@ -10,6 +10,7 @@ const navItems = [
   { name: "Startseite", path: "/" },
   { name: "Über Uns", path: "/about" },
   { name: "Leistungen", path: "/services" },
+  { name: "Projekte", path: "/projects" },
   { name: "Arbeitsweise", path: "/process" },
   { name: "Kontakt", path: "/contact" },
 ];
