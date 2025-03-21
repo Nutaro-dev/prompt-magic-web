@@ -232,7 +232,6 @@ const Process = () => {
                 <li>Vercel</li>
                 <li>Netlify</li>
                 <li>Firebase Hosting</li>
-                <li>AWS</li>
               </ul>
             </div>
 
