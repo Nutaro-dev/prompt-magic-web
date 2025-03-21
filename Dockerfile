@@ -21,5 +21,5 @@ ENV NODE_ENV production
 # Expose the port the app runs on
 EXPOSE 3000
 
-# Start the application
-CMD ["npm", "start"]
+# Start the application using Next.js CLI directly
+CMD ["npx", "next", "start"]
