@@ -257,7 +257,7 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <iframe 
-              src="https://www.google.com/maps/place/Hamburg/@53.5586622,9.7626742,11z/data=!3m1!4b1!4m6!3m5!1s0x47b161837e1813b9:0x4263df27bd63aa0!8m2!3d53.5488282!4d9.9871703!16zL20vMDNocno?entry=ttu&g_ep=EgoyMDI1MDMxOS4xIKXMDSoASAFQAw%3D%3D" 
+              src="https://maps.app.goo.gl/5ZEPw5kJnp1AYT4W9" 
               width="100%" 
               height="450" 
               style={{ border: 0 }} 
