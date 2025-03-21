@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: nutaro-website
     ports:
-      - "8080:3000"
+      - "9090:3000"
     restart: unless-stopped
     environment:
       - NODE_ENV=production
