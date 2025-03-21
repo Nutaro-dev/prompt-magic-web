@@ -257,7 +257,7 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2430.5330667907024!2d9.986872776816062!3d53.517007971233525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18f9deb3f654b%3A0x48abf478e125e10a!2sBeyerstieg%2014%2C%2021107%20Hamburg!5e0!3m2!1sde!2sde!4v1698586511008!5m2!1sde!2sde" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d189003.5026949557!2d9.762674159852347!3d53.55866221234679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b161837e1813b9%3A0x4263df27bd63aa0!2sHamburg!5e1!3m2!1sde!2sde!4v1742594522347!5m2!1sde!2sde" 
               width="100%" 
               height="450" 
               style={{ border: 0 }} 
