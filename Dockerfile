@@ -12,14 +12,14 @@ RUN npm install
 # Copy the entire project
 COPY . .
 
-# Build the Next.js app
+# Build the Vite app
 RUN npm run build
 
-# Set environment to production
-ENV NODE_ENV production
+# Install a simple server to serve the static files
+RUN npm install -g serve
 
-# Expose the port the app runs on
+# Expose the port the app will run on
 EXPOSE 3000
 
-# Start the application using Next.js CLI directly
-CMD ["npx", "next", "start"]
+# Start the application
+CMD ["serve", "-s", "dist", "-l", "3000"]
