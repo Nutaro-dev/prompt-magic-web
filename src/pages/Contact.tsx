@@ -33,8 +33,8 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Direct connection to your email server container on port 9091
-      const response = await fetch('http://5.83.145.85:9091/api/send-email', {
+      // Use a relative URL to maintain the same protocol (HTTPS)
+      const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

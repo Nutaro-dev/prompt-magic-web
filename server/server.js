@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(express.json());
 app.use(cors({
-    origin: '*',  // In production, you'd restrict this to specific domains
+    origin: ['https://nutaro.de', 'http://localhost:9090'],  // Allowed domains
     methods: ['GET', 'POST', 'OPTIONS'],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization']
@@ -67,16 +67,19 @@ ${message}`,
         // Send the email
         await transporter.sendMail(mailOptions);
 
+        res.header('Content-Type', 'application/json');
         res.status(200).json({
             success: true,
             message: 'Email sent successfully'
         });
-        res.header('Content-Type', 'application/json');
-        res.status(200).json({ success: true, message: 'Email sent successfully' });
     } catch (error) {
         console.error('Error sending email:', error);
         res.header('Content-Type', 'application/json');
-        res.status(500).json({ success: false, message: 'Error sending email', error: error.message });
+        res.status(500).json({
+            success: false,
+            message: 'Error sending email',
+            error: error.message
+        });
     }
 });
 
