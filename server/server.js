@@ -9,9 +9,10 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(express.json());
 app.use(cors({
-    origin: process.env.FRONTEND_URL || '*',
-    methods: ['POST'],
-    credentials: true
+    origin: '*',  // In production, you'd restrict this to specific domains
+    methods: ['GET', 'POST', 'OPTIONS'],
+    credentials: true,
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 // Create Gmail transporter
@@ -70,13 +71,12 @@ ${message}`,
             success: true,
             message: 'Email sent successfully'
         });
+        res.header('Content-Type', 'application/json');
+        res.status(200).json({ success: true, message: 'Email sent successfully' });
     } catch (error) {
         console.error('Error sending email:', error);
-        res.status(500).json({
-            success: false,
-            message: 'Failed to send email',
-            error: error.message
-        });
+        res.header('Content-Type', 'application/json');
+        res.status(500).json({ success: false, message: 'Error sending email', error: error.message });
     }
 });
 

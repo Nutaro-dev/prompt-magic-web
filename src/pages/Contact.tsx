@@ -33,13 +33,22 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/api/send-email', {
+      // Direct connection to your email server container on port 9091
+      const response = await fetch('http://5.83.145.85:9091/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(formData)
       });
+
+      // Before trying to parse as JSON, verify the content type
+      const contentType = response.headers.get("content-type");
+      if (!contentType || !contentType.includes("application/json")) {
+        const text = await response.text();
+        console.error("Non-JSON response:", text);
+        throw new Error("Server returned non-JSON response");
+      }
 
       const data = await response.json();
 
