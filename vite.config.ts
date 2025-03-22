@@ -8,6 +8,15 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    proxy: {
+      // This will proxy all requests to /api/* to your email server
+      '/api': {
+        target: 'http://localhost:9091',
+        changeOrigin: true,
+        secure: false,
+        rewrite: (path) => path
+      }
+    }
   },
   plugins: [
     react(),

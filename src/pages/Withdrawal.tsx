@@ -43,7 +43,7 @@ const Withdrawal = () => {
                       <p className="font-medium">Nutaro</p>
                       <p className="flex items-center gap-2">
                         <Home className="h-4 w-4 text-muted-foreground" />
-                        <span>Beyerstieg 14, 21107 Hamburg</span>
+                        <span>Beyerstieg 12, 21107 Hamburg</span>
                       </p>
                       <p className="flex items-center gap-2">
                         <Phone className="h-4 w-4 text-muted-foreground" />
@@ -112,7 +112,7 @@ const Withdrawal = () => {
                   <p>
                     <span className="font-medium">An:</span><br />
                     Nutaro<br />
-                    Beyerstieg 14<br />
+                    Beyerstieg 12<br />
                     21107 Hamburg<br />
                     E-Mail: info@nutaro.de
                   </p>

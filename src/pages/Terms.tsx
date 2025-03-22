@@ -30,7 +30,7 @@ const Terms = () => {
               <div className="ml-12 space-y-4">
                 <p className="text-muted-foreground">
                   Diese Allgemeinen Geschäftsbedingungen (nachfolgend "AGB") gelten für sämtliche Verträge zwischen 
-                  Nutaro, Beyerstieg 14, 21107 Hamburg (nachfolgend "Anbieter") und seinen Kunden 
+                  Nutaro, Beyerstieg 12, 21107 Hamburg (nachfolgend "Anbieter") und seinen Kunden
                   (nachfolgend "Auftraggeber") über die Erbringung von Dienstleistungen im Bereich der Webentwicklung 
                   und Online-Beratung.
                 </p>

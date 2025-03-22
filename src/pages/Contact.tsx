@@ -33,8 +33,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // Use the email server port (9091) when sending the request
-      const response = await fetch('http://localhost:9091/api/send-email', {
+      const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
