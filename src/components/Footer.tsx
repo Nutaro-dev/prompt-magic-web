@@ -18,7 +18,7 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Kontakt</h3>
             <address className="not-italic text-muted-foreground">
-              <p>Beyerstieg 14</p>
+              <p>Beyerstieg 12</p>
               <p>21107 Hamburg</p>
               <div className="mt-2">
                 <p>Allgemein: <a href="mailto:info@nutaro.de" className="hover:text-primary">info@nutaro.de</a></p>

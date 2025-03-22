@@ -18,6 +18,26 @@ services:
       # For persistent data if needed
       - vite_app_data:/app/data
 
+  # Email server service
+  email-server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: nutaro-email-server
+    ports:
+      - "9091:3000"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - GMAIL_USER=${GMAIL_USER}
+      - GMAIL_APP_PASSWORD=${GMAIL_APP_PASSWORD}
+      - FRONTEND_URL=http://localhost:9090
+      - PORT=3000
+    volumes:
+      - email_server_data:/app/data
+
 volumes:
   vite_app_data:
-    # This creates a named volume for persistent data
+  # This creates a named volume for persistent data
+  email_server_data:
+  # Volume for email server data if needed

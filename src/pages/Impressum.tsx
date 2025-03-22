@@ -32,7 +32,7 @@ const Impressum = () => {
                   </p>
                   <p className="flex items-start gap-2">
                     <MapPin className="h-5 w-5 mt-0.5 text-muted-foreground" />
-                    <span>Beyerstieg 14<br/>21107 Hamburg</span>
+                    <span>Beyerstieg 12<br/>21107 Hamburg</span>
                   </p>
                 </div>
               </CardContent>

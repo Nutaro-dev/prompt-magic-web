@@ -104,7 +104,7 @@ const PrivacyPolicy = () => {
                 <div className="bg-muted/50 p-4 rounded-lg border mb-4">
                   <p className="mb-2">Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
                   <p className="mb-1 font-medium">Andre Stierl</p>
-                  <p className="mb-1">Beyerstieg 14</p>
+                  <p className="mb-1">Beyerstieg 12</p>
                   <p className="mb-1">21107 Hamburg</p>
                   <p className="mb-1">E-Mail: info@nutaro.de</p>
                   <p>Telefon: auf Anfrage</p>
